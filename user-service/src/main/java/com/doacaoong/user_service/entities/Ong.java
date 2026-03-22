@@ -18,7 +18,7 @@ public class Ong implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id // chave primária
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)// diz que o valor vai ser gerado aut, gerado por autoincremento
     private Long id;
 
     private String name;
