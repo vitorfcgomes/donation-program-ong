@@ -29,8 +29,8 @@ O projeto foi desenvolvido com foco em boas práticas de engenharia de software,
                         └────────┬────────┘
                                  │
           ┌──────────────────────┼──────────────────────┐
-          │                      │                       │
-          ▼                      ▼                       ▼
+          │                      │                      │
+          ▼                      ▼                      ▼
 ┌─────────────────┐   ┌─────────────────┐   ┌─────────────────┐
 │  user-service   │   │campaign-service │   │donation-service │
 │   porta 8081    │   │   porta 8082    │   │   porta 8083    │
