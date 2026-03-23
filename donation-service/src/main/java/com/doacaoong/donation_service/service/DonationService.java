@@ -2,13 +2,15 @@ package com.doacaoong.donation_service.service;
 
 import com.doacaoong.donation_service.entities.Donation;
 import com.doacaoong.donation_service.event.DonationEvent;
+import com.doacaoong.donation_service.exceptions.ResourceNotFoundException;
 import com.doacaoong.donation_service.repository.DonationRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Service;
 
+
 import java.util.List;
-import java.util.Optional;
+
 
 @Service
 @RequiredArgsConstructor
@@ -19,8 +21,8 @@ public class DonationService {
     public List<Donation> findAll(){
         return donationRepository.findAll();
     }
-    public Optional<Donation> findById(Long id){
-        return donationRepository.findById(id);
+    public Donation findById(Long id){
+        return donationRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Doação não encontrada com id " + id));
     }
     public List<Donation> findByCampaignId(Long campaignId){
         return donationRepository.findByCampaignId(campaignId);

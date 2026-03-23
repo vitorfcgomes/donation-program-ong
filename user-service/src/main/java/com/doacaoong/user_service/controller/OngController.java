@@ -6,7 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
+
 
 @RestController
 @RequestMapping("/ongs")
@@ -19,7 +19,7 @@ public class OngController {
         return ongService.findAll();
     }
     @GetMapping("/{id}")
-    public Optional<Ong> findById(@PathVariable Long id){
+    public Ong findById(@PathVariable Long id){
         return ongService.findById(id);
     }
     @PutMapping("/{id}")
