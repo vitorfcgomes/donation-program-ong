@@ -50,7 +50,7 @@ O projeto foi desenvolvido com foco em boas práticas de engenharia de software,
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **Java 17**
 - **Spring Boot 4.0.4**
@@ -64,7 +64,7 @@ O projeto foi desenvolvido com foco em boas práticas de engenharia de software,
 
 ---
 
-## 📦 Microserviços
+##  Microserviços
 
 | Serviço | Porta | Responsabilidade | Banco |
 |---|---|---|---|
@@ -169,7 +169,7 @@ POST /ongs
 
 ---
 
-### 📢 campaign-service — `http://localhost:8082`
+###  campaign-service — `http://localhost:8082`
 
 | Método | Endpoint | Descrição |
 |---|---|---|
@@ -277,8 +277,6 @@ donation-ong-platform/
 Desenvolvido por **Vitor Carvalho**
 
 🎓 Estudante de Desenvolvimento de Software
-💻 Foco em Back-End com Java e Spring Boot
-🚀 Em constante evolução e aprendizado
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Vitor%20Carvalho-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vitorfcgomes/)
 [![GitHub](https://img.shields.io/badge/GitHub-vitorfcgomes-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vitorfcgomes)
